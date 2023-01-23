@@ -27,7 +27,7 @@ def view_products():
 
     # Event loop to process user input
     while True:
-        event, values = window.Read()
+        event, values = window.Read(timeout=0)
         if event == 'OK' or event == None:
             break
 
